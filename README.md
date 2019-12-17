@@ -51,18 +51,61 @@ Options:
 
 If you also want to use the "Download as MP3" function you have to install ffmpeg.
 
-Paste the following text in your Command Prompt:
+paste the following link in your browser:
 
-~~~
-npm -g install ffmpeg
-~~~
-To be shure you have installed ffmpeg correctly past this in your Command Prompt:
+https://ffmpeg.zeranoe.com/builds/
+
+And download the latest version of ffmpeg, the file is a ZIP file.
+
+After you have downloaded the ZIP File, you have to extract the folder. I used my desktop to extract it:
+
+![Extract zip example](https://i.ibb.co/2hcVhYY/Screenshot-1.png)
+
+Then rename the folder to ffmpeg, this makes it easier to find later:
+
+![Rename example](https://i.ibb.co/0C4H3xV/Screenshot-2.png)
+![Rename example 2](https://i.ibb.co/v3QCW6S/Screenshot-3.png)
+
+After you have succesfully renamed your folder, cut the folder and paste it into your "C:/": 
+
+![Copy paste example 1](https://i.ibb.co/PZ63MJQ/Screenshot-4.png)
+![Copy paste example 2](https://i.ibb.co/K9gFNfd/Screenshot-5.png)
+
+Then go into the folder "bin" inside the ffmpeg folder:
+
+![go into bin folder](https://i.ibb.co/jJ7tsJ1/Screenshot-6.png)
+
+In the upper bar, copy the path to the "bin" folder:
+
+![copy path](https://i.ibb.co/6FnNB3m/Screenshot-7.png)
+
+Press the Windows Button and search for "Edit the system environment variables":
+
+![Edit system variables example](https://i.ibb.co/JnBYv4G/Screenshot-8.png)
+
+Click the "Environment Variables..." button:
+
+![Edit system variables button](https://i.ibb.co/3mpSpLJ/Screenshot-9.png)
+
+Double click on "Path" in User variables:
+
+![Edit system variables button](https://i.ibb.co/THyMQ0d/Screenshot-10.jpg)
+
+Click the "New" button on the right:
+
+![New button](https://i.ibb.co/9ZCB3n6/Screenshot-11.png)
+
+Paste the path of the "Ffmpeg/bin" folder to the field:
+
+![Paste it](https://i.ibb.co/CzLKvjQ/Screenshot-12.png)
+
+Now you can close all those programms and open the CMD to type
 
 ~~~
 ffmpeg
 ~~~
 
-The output you should get is something like this:
+If you have installed ffmpeg correctly, something like this should be the output:
 
 ~~~
 ffmpeg version git-2019-12-07-ff2b75d Copyright (c) 2000-2019 the FFmpeg developers
